@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCOUNT_ID = '831441088496'  // your AWS account ID
-        AWS_REGION = 'us-east-1'        // your region
+        AWS_ACCOUNT_ID = '831441088496'
+        AWS_REGION = 'us-east-1'
         IMAGE_REPO_NAME = 'cicd-demo'
         IMAGE_TAG = "latest"
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/nehanreddyloka/cicd-demo.git'
+                git branch: 'main', url: 'https://github.com/nehanreddyloka/cicd-demo.git'
             }
         }
 
