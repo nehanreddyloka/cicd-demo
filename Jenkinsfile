@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/yourusername/cicd-demo.git'
+                git 'https://github.com/nehanreddyloka/cicd-demo.git'
             }
         }
 
